@@ -36,14 +36,19 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	//double phi2 = fromLat2;
 
-	//double gamma1 = toLon1;
+	//double gamma1 = toLon1;
+
 	//double gamma2 = fromLon2;
 
 	double changeInLat = fromLat2 - toLat1; // deltaPhi
 	double changeInLon = fromLon2 - toLon1; // deltaGamma
 	/* previous try
 	//// Magnitude
-	//double a = pow(sin(changeInLat / 2), 2) + cos(toLat1)*cos(fromLat2)*pow(sin(changeInLon / 2), 2);;	//double c = 2 * atan2(sqrt(a), sqrt(1 - a));	//double magnitude = MEAN_EARTH_RADIUS*c;
+	//double a = pow(sin(changeInLat / 2), 2) + cos(toLat1)*cos(fromLat2)*pow(sin(changeInLon / 2), 2);;
+	//double c = 2 * atan2(sqrt(a), sqrt(1 - a));
+
+	//double magnitude = MEAN_EARTH_RADIUS*c;
+
 	// Bearing
 	double y = sin(toLon1)*cos(toLat1);
 	double x = cos(toLat1)*sin(fromLat2) - sin(toLat1)*cos(fromLat2)*cos(changeInLon);
